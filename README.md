@@ -17,7 +17,8 @@ stored.
 5. Map the IP address with its MAC address and return the MAC address to client.
 P
 ## PROGRAM - ARP
-Cilent
+# Cilent
+```
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
@@ -30,8 +31,9 @@ while True:
  c.send(address[ip].encode())
  except KeyError:
  c.send("Not Found".encode())
-
- Server
+```
+# Server
+```
  import socket
 s=socket.socket()
 s.connect(('localhost',8000))
@@ -40,19 +42,20 @@ REG NO:
  ip=input("Enter logical Address : ")
  s.send(ip.encode())
  print("MAC Address",s.recv(1024).decode()
-
+```
 
 ## OUPUT - ARP
-Cilent
+# Cilent
 ![WhatsApp Image 2024-03-05 at 20 05 44_c3a6377d](https://github.com/Pradeepkumar-2005/2c.ARP_RARP_PROTOCOLS/assets/147474038/9133ba15-68ad-414b-9dd3-ce5275f1debb)
 
 
-Server
+# Server
 ![WhatsApp Image 2024-03-05 at 20 05 44_4305be37](https://github.com/Pradeepkumar-2005/2c.ARP_RARP_PROTOCOLS/assets/147474038/d42fdbca-315a-4150-933d-0f9da5e31eae)
 
 
 ## PROGRAM - RARP
-Cilent
+# Cilent
+```
 import socket
 s=socket.socket()
 s.bind(('localhost',9000))
@@ -65,8 +68,9 @@ while True:
    c.send(address[ip].encode())
  except KeyError:
    c.send("Not Found".encode())
-
-Server
+```
+# Server
+```
 import socket
 s=socket.socket()
 s.connect(('localhost',9000))
@@ -74,15 +78,15 @@ while True:
  ip=input("Enter MAC Address : ")
  s.send(ip.encode())
  print("Logical Address",s.recv(1024).decode())
-
+```
 
 
 ## OUPUT -RARP
-Cilent
+# Cilent
 ![WhatsApp Image 2024-03-05 at 20 08 42_7cfb5dfc](https://github.com/Pradeepkumar-2005/2c.ARP_RARP_PROTOCOLS/assets/147474038/532b7396-bfaa-47ba-8564-9ed4ad11c40a)
 
 
-Server
+# Server
 ![WhatsApp Image 2024-03-05 at 20 08 42_a3f460ea](https://github.com/Pradeepkumar-2005/2c.ARP_RARP_PROTOCOLS/assets/147474038/f715f737-ebc2-4a53-8958-91bbcecd1f90)
 
 
