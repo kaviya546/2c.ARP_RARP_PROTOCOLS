@@ -1,4 +1,4 @@
-![WhatsApp Image 2024-03-05 at 20 08 42_ac2f5f59](https://github.com/Pradeepkumar-2005/2c.ARP_RARP_PROTOCOLS/assets/147474038/e09db481-608c-4d62-99b7-d3f468d9ace5)# 2c.SIMULATING ARP /RARP PROTOCOLS
+# 2c.SIMULATING ARP /RARP PROTOCOLS
 ## AIM
 To write a python program for simulating ARP protocols using TCP.
 ## ALGORITHM:
