@@ -70,7 +70,7 @@ while True:
     s.send(ip.encode())
     print("Logical address",s.recv(1024).decode())
 ```
-OUTPUT-RARP:
+## OUTPUT-RARP:
 ![image](https://github.com/kaviya546/2c.ARP_RARP_PROTOCOLS/assets/150368823/95e7cd2a-df07-4099-b925-6e2705826627)
 
 
